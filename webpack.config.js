@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
@@ -18,6 +19,18 @@ module.exports = {
         include: path.resolve(__dirname, 'src'),
         exclude: /node_modules/,
         loader: 'babel-loader',
+			},
+			{
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+							limit: 8192,
+							name: '[path][name].[ext]',
+            },
+          },
+        ],
       },
       {
         test: /\.html$/,
@@ -42,4 +55,4 @@ module.exports = {
 			}
 		]
 	}
-}
+};
