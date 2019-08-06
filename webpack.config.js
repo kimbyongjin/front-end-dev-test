@@ -1,11 +1,9 @@
 const path = require('path');
-const webpack = require('webpack');
 
 module.exports = {
-	entry: './src/app.js',
-
+	entry: './src/index.js',
 	output: {
-		path: path.resolve(__dirname, 'dist'),
+		path: path.resolve(__dirname, 'public'),
 		filename: 'bundle.js'
 	},
 	watch: true,
@@ -15,6 +13,12 @@ module.exports = {
 	//Add sass-loader
 	module: {
 		rules: [
+			{
+        test: /\.js?/,
+        include: path.resolve(__dirname, 'src'),
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+      },
       {
         test: /\.html$/,
         loader: "html-loader"

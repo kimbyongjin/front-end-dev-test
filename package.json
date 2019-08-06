@@ -5,7 +5,10 @@
   "main": "main.js",
   "scripts": {
     "start": "webpack-dev-server --hot --inline",
-    "build": "webpack",
+    "server": "node server/index.js",
+    "server-dev": "nodemon server/index.js",
+    "build": "webpack -p",
+    "build-dev": "webpack -d --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,21 +22,34 @@
   },
   "homepage": "https://github.com/roostergrin/front-end-dev-test",
   "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
     "bootstrap": "^4.3.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "jquery": "^3.3.1",
-    "popper.js": "^1.15.0"
+    "path": "^0.12.7",
+    "popper.js": "^1.15.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
     "autoprefixer": "^9.5.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
     "css-loader": "^2.1.1",
     "exports-loader": "^0.7.0",
     "html-loader": "^0.5.5",
     "node-sass": "^4.11.0",
+    "nodemon": "^1.19.1",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.3.0",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6",
     "webpack-dev-server": "^3.3.1"
   }
 }
