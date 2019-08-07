@@ -7,11 +7,6 @@ module.exports = {
 		path: path.resolve(__dirname, 'public'),
 		filename: 'bundle.js'
 	},
-	watch: true,
-	devServer: {
-		inline: true
-	},
-	//Add sass-loader
 	module: {
 		rules: [
 			{
