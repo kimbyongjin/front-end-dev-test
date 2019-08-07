@@ -8,5 +8,5 @@ package-lock.json
 # Transpiled bundle
 public/bundle.js
 
-# .zip assets
+# uncompressed assets
 front-end-dev-test-assets
