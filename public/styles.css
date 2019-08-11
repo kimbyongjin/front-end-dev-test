@@ -1,6 +1,18 @@
+body {
+  font-family: Helvetica, sans-serif;
+}
+
 .container-fluid {
   padding-left: 0px;
   padding-right: 0px;
+}
+
+.button-purple {
+  color: #ac5ed1;
+}
+
+.button-orange {
+  color: #ff7217;
 }
 
 .text-module-container {
