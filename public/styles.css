@@ -1,0 +1,31 @@
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.text-module-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lorem-title {
+  color: #613474;
+}
+
+.lorem-text {
+  font-size: 14px;
+}
+
+.lorem-link {
+  text-decoration: none;
+  color: #613474;
+  cursor: pointer;
+}
+
+.lorem-link:hover {
+  text-decoration: none;
+  color: #613474;
+  cursor: pointer;
+}

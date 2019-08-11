@@ -5,7 +5,7 @@ const Carousel = (props) => {
   return (
     // TODO: React reviews carousel
       // Must be the final module of page, except for final banner
-    <div className="carousel-container">Carousel Container</div>
+    <div className="carousel-container"></div>
   )
 };
 

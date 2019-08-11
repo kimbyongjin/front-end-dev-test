@@ -1,25 +1,28 @@
 import React from 'react';
-import { Container, Col, Row, } from 'react-bootstrap';
+import { Col, Row, } from 'react-bootstrap';
+import TextModule from './TextModule';
 
 const PhotoModule = (props) => {
   const { imgUrl, imgAlt, wide, } = props;
 
   if (wide) { // handle full width photo module conditional rendering
-
     return (
-      // TODO: JSX component for photo module
-
-      <div className="photo-module-container full-width">Photo Module Container
-        <img src={imgUrl} alt={imgAlt} ></img>
-      </div>
-  );
+      <Row>
+        <Col>
+          <img src={imgUrl} alt={imgAlt} ></img>
+        </Col>
+      </Row>
+    );
   } else {
     return (
-      <div className="photo-module-container half-width">Photo Module Container
-        <img src={imgUrl} alt={imgAlt} ></img>
-      </div>
+      <Row>
+        <TextModule />
+        <Col>
+          <img src={imgUrl} alt={imgAlt} ></img>
+        </Col>
+      </Row>
     );
-  }
+  };
 };
 
 export default PhotoModule;

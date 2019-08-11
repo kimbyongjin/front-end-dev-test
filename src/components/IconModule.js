@@ -1,10 +1,10 @@
 import React from 'react';
 
-const IconModule = (props) => {
+const IconModule = () => {
 
   return (
     // TODO create module for aside block containing icons w/ animations
-    <div className="icon-module-container">Icon Module Container</div>
+    <div className="icon-module-container"></div>
   );
 };
 

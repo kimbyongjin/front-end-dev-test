@@ -25,17 +25,15 @@ class App extends React.Component {
 
   render () {
     return (
-      <div className="app-container">App Container
+      <Container fluid={true} >
         <PhotoModule imgUrl={imgHero} imgAlt={'hero.jpg'} wide={true} />
-        <TextModule className="col-md-6" />
-        <PhotoModule className="col-md-6" imgUrl={imgRocks} imgAlt={'rocks.jpg'} wide={false} />
+        <PhotoModule imgUrl={imgRocks} imgAlt={'rocks.jpg'} wide={false} />
         <PhotoModule imgUrl={imgBanner1} imgAlt={'banner-1.jpg'} wide={true} />
-        <TextModule />
         <IconModule />
         <PhotoModule imgUrl={imgBanner2} imgAlt={'banner-2.jpg'} wide={true} />
         <Carousel />
         <Footer />
-      </div>
+      </Container>
     );
   }
 };
